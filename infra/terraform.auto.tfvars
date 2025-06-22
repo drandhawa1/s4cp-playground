@@ -23,7 +23,7 @@ database_subnets_cidr = [
 
 db_engine = "postgres"
 # aws rds describe-db-engine-versions --engine aurora-postgresql --query '*[].[EngineVersion]' --output text --region us-east-2
-db_engine_version       = "14.10"
+db_engine_version       = "14.9"
 db_major_engine_version = "14"
 db_instance_class       = "db.t4g.small"
 db_engine_family        = "postgres14"
@@ -32,6 +32,6 @@ db_maximum_storage      = 100
 
 /********** EKS Module ***************/
 
-eks_version    = "1.24"
+eks_version    = "1.29"
 instance_types = ["t3.large"]
 domain         = "s4cp.com" // @CHANGEME
